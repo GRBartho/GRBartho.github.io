@@ -1,0 +1,8 @@
+{
+  "name": "Copy of SVSU AI Taskforce Portal",
+  "description": "A collaborative platform for the Saginaw Valley State University AI Taskforce to share proposals, discuss ethics, and shape the future of AI in academia.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
