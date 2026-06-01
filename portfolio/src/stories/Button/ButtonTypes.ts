@@ -1,5 +1,5 @@
 export interface ButtonProps {
     variant: "green" | "gray",
-    label: string,
+    children: string,
     onClick: () => void;
 }

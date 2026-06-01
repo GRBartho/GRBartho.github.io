@@ -41,7 +41,7 @@ const metta: Meta<typeof Button> = {
     },
 
     // Adds a text input control so users can change what is rendered inside the Button
-    label: { control: "text" },
+    children: { control: "text" },
   },
 };
 
@@ -59,7 +59,7 @@ type Story = StoryObj<typeof Button>;
 export const Green: Story = {
   args: {
     variant: "green",
-    label: "Green Button",
-    onClick: () => alert("Button clicked")
+    children: "Green Button",
+    onClick: () => alert("Button clicked"),
   },
 };

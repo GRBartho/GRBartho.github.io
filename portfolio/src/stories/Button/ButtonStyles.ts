@@ -15,6 +15,8 @@ import { makeStyles } from "tss-react/mui";
 export const useButtonStyles = makeStyles()((theme) => ({
   green: {
     backgroundColor: theme.palette.primary.main,
+    color: theme.palette.text.primary,
+    borderRadius: "30px",
   },
   gray: {},
 }));
