@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://grbartho.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +16,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.9",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tss-react": "^4.9.20"
