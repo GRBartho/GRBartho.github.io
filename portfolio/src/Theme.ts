@@ -1,39 +1,27 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 
 export const main = createTheme({
-/*   components: {
-      MuiButton: {
-    styleOverrides: {
-      root: {
-      fontFamily: "'Saira Condensed', sans-serif",
-      },
-    },
-  },
-    MuiTextField: {
-      styleOverrides: {
-        root: {
-          "& .MuiInputBase-sizeSmall": {
-            height: 40,
-          },
-        },
-      },
-    },
-    MuiFormHelperText: {
-      styleOverrides: {
-        root: {
-          marginLeft: 4,
-          marginRight: 4,
-        },
-      },
-    },
-  }, */
   palette: {
     mode: "light",
-    primary: {
-      main: "#10B981",
-      dark: "#059669",
-      light: "#34D399",
-      contrastText: "#fff",
+    text: {
+      primary: "#F1F5F9",
+      secondary: "#CBD5E1",
+    },
+    emerald: {
+      400: "#34D399",
+      500: "#10B981",
+      600: "#059669",
+      700: "#047857",
+    },
+    slate: {
+      400: "94A3B8",
+      500: "#64748B",
+      800: "#1E293B",
+    },
+    border: {
+      subtle: "rgba(52, 211, 153, 0.1)", // #34D399 at 10%
+      interactive: "rgba(16, 185, 129, 0.5)", // #10B981 at 50%
+      structural: "rgba(6, 78, 59, 0.2)", // #064E3B at 20%
     },
     action: {
       active: "rgba(0, 0, 0, 0.54)",
@@ -49,7 +37,35 @@ export const main = createTheme({
       activatedOpacity: 0.12,
     },
   },
-/*   shape: {
+  typography: {
+    fontFamily: "'Inter', sans-serif",
+    h1: {
+      fontFamily: "'Inter', sans-serif",
+      fontWeight: "bolder",
+    },
+    h2: {
+      fontFamily: "'Inter', sans-serif",
+    },
+    h3: {
+      fontFamily: "'Inter', sans-serif",
+    },
+    h4: {
+      fontFamily: "'Inter', sans-serif",
+    },
+    h5: {
+      fontFamily: "'Inter', sans-serif",
+    },
+    h6: {
+      fontFamily: "'Inter', sans-serif",
+    },
+    button: {
+      fontFamily: "'Inter', sans-serif",
+      textTransform: "none",
+      fontSize: "16px",
+      fontWeight: "bolder",
+    },
+  },
+  /*   shape: {
     borderRadius: 4,
   },
   typography: {
@@ -105,22 +121,3 @@ export const main = createTheme({
     },
   }, */
 });
-
-export const lightGreen = createTheme({});
-export const lightBlue = createTheme({});
-export const lightYellow = createTheme({});
-
-export const darkRed = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-      main: "#C30101",
-      dark: "#9C0101",
-      light: "#E25A5A",
-      contrastText: "#000000",
-    },
-  },
-});
-export const darkGreen = createTheme({});
-export const darkBlue = createTheme({});
-export const darkYellow = createTheme({});

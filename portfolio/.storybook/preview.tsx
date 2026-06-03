@@ -1,6 +1,10 @@
-import type { Preview } from '@storybook/react-vite';
-import { ThemeProvider, CssBaseline, StyledEngineProvider } from '@mui/material';
-import { main } from '../src/theme';
+import type { Preview } from "@storybook/react-vite";
+import {
+  ThemeProvider,
+  CssBaseline,
+  StyledEngineProvider,
+} from "@mui/material";
+import { main } from "../src/Theme.ts";
 
 const preview: Preview = {
   decorators: [
@@ -22,7 +26,7 @@ const preview: Preview = {
       },
     },
     a11y: {
-      test: 'todo',
+      test: "todo",
     },
   },
 };

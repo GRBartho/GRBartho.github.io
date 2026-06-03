@@ -15,6 +15,7 @@
 
 import type { Meta, StoryObj } from "@storybook/react"; // Imports TypeScript types for Storybook metadata and story objects
 import Button from "./Button"; // Imports the Button component we want to display in Storybook
+import EmailIcon from "@mui/icons-material/Email"; // Imports the email icon from mui icons
 
 // Storybook "meta" configuration for this component.
 // Meta tells Storybook:
@@ -63,3 +64,19 @@ export const Green: Story = {
     onClick: () => alert("Button clicked"),
   },
 };
+
+export const Gray: Story = {
+  args: {
+    variant: "gray",
+    children: "Gray Button",
+    onClick: () => alert("Button clicked"),
+  },
+};
+
+export const IconButton: Story = {
+  args: {
+    variant: "green",
+    children: "Send an Email",
+    icon: <EmailIcon/>
+  }
+}

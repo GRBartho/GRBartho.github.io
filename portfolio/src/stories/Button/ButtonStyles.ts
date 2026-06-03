@@ -14,9 +14,33 @@ import { makeStyles } from "tss-react/mui";
 
 export const useButtonStyles = makeStyles()((theme) => ({
   green: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.emerald[500],
     color: theme.palette.text.primary,
-    borderRadius: "30px",
+    borderRadius: "50px",
+    fontWeight: "bolder",
+    border: theme.palette.border.subtle,
+    padding: theme.spacing(2),
+    "&:hover": {
+      backgroundColor: theme.palette.emerald[700],
+    },
+    "& .MuiButton-startIcon": {
+      height: "24px",
+      width: "24px",
+    },
   },
-  gray: {},
+  gray: {
+    backgroundColor: theme.palette.slate[800],
+    color: theme.palette.text.primary,
+    borderRadius: "50px",
+    fontWeight: "bolder",
+    border: theme.palette.border.structural,
+    padding: theme.spacing(2),
+    "&:hover": {
+      backgroundColor: theme.palette.slate[500],
+    },
+    "& .MuiButton-startIcon": {
+      height: "24px",
+      width: "24px",
+    },
+  },
 }));
